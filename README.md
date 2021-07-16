@@ -9,10 +9,11 @@ In this example we introduce the <<- operator which can be used to assign a valu
 
 The first function, makeVector creates a special "vector", which is really a list containing a function to
 
-set the value of the vector
-get the value of the vector
-set the value of the mean
-get the value of the mean
+1.set the value of the vector
+2.get the value of the vector
+3.set the value of the mean
+4.get the value of the mean
+
 makeVector <- function(x = numeric()) {
         m <- NULL
         set <- function(y) {
@@ -40,6 +41,7 @@ cachemean <- function(x, ...) {
         m
 }
 
+
 **Assignment: Caching the Inverse of a Matrix**
 
 Matrix inversion is usually a costly computation and there may be some benefit to caching the inverse of a matrix rather than computing it repeatedly (there are also alternatives to matrix inversion that we will not discuss here). Your assignment is to write a pair of functions that cache the inverse of a matrix.
@@ -62,4 +64,5 @@ Submit to Coursera the URL to your GitHub repository that contains the completed
 
 
 **Grading**
+
 This assignment will be graded via peer assessment.
